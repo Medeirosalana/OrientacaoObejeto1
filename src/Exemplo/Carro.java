@@ -1,12 +1,12 @@
 package Exemplo;
 
 public class Carro {
-     int id;
-     Modelo modelo;
-     Marca marca;
-     String placa;
-     int ano;
-     int km;
+     private int id;
+     private Modelo modelo;
+     private Marca marca;
+     private String placa;
+     private int ano;
+     private int km;
      
      public Carro(){}
      
@@ -18,15 +18,58 @@ public class Carro {
          this.placa = placa;
      }
 
+    
+              
+    public int getKm() {
+        return this.km;
+    }
+     public void setKm(int km){
+        this.km = km;
+     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Modelo getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(Modelo modelo) {
+        this.modelo = modelo;
+    }
+
+    public Marca getMarca() {
+        return marca;
+    }
+
+    public void setMarca(Marca marca) {
+        this.marca = marca;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
     @Override
     public String toString() {
-        return "Carro " + this.id + ":"
-                + "\nModelo: " + this.modelo.nome
-                + "\nMarca: " + this.modelo.marca.nome
-                + "\nAno: " + this.ano
-                + "\nKM: " + this.km
-                + "\nPLaca: " + this.placa;
-                
+        return "Carro{" + "id=" + id + ", modelo=" + modelo + ", marca=" + marca + ", placa=" + placa + ", ano=" + ano + ", km=" + km + '}';
     }
      
      
